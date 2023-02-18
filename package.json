@@ -1,0 +1,59 @@
+{
+  "name": "imageshack",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@7.14.0",
+  "description": "一个用于基于 supabase 的图床网站",
+  "author": {
+    "url": "https://kuizuo.cn",
+    "email": "hi@kuizuo.cn",
+    "name": "Kuizuo"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/kuizuo/imageshack",
+    "type": "git"
+  },
+  "keywords": [
+    "imageshack",
+    "template",
+    "web",
+    "spider",
+    "http"
+  ],
+  "scripts": {
+    "build": "nuxi build",
+    "dev": "nuxi dev -o",
+    "start": "node .output/server/index.mjs",
+    "start:pm2": "pm2 start ecosystem.config.js --env production",
+    "lint": "eslint .",
+    "postinstall": "nuxi prepare",
+    "generate": "nuxi generate",
+    "release": "bumpp --commit --push --tag"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.10",
+    "@iconify-json/ri": "^1.1.3",
+    "@iconify-json/twemoji": "^1.1.5",
+    "@kuizuo/eslint-config": "^1.0.1",
+    "@kuizuo/http": "^0.3.5",
+    "@kuizuo/utils": "^0.2.0",
+    "@nuxt/content": "^2.4.3",
+    "@nuxt/devtools": "^0.1.2",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/supabase": "^0.3.1",
+    "@pinia/nuxt": "^0.4.4",
+    "@unocss/nuxt": "^0.49.4",
+    "@vueuse/nuxt": "^9.5.0",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.27.0",
+    "naive-ui": "^2.33.5",
+    "nuxt": "^3.2.0",
+    "nuxt-icon": "^0.3.2",
+    "pinia": "^2.0.24",
+    "pinia-plugin-persistedstate": "^2.4.0",
+    "typescript": "^4.9.3",
+    "unplugin-vue-components": "^0.22.9",
+    "vitest": "^0.24.5"
+  }
+}
